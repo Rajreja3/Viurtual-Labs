@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Lab</title>
+    <style>
+        body{
+            /* background-color: teal; */
+            background: linear-gradient(130deg, pink, #ffd400);
+            background-repeat: no-repeat;
+        
+        }
+        header img{
+            /* border: 2px solid red; */
+            margin: -8px auto;
+            /* width: 960px; */
+            width: 1024px;
+            display: block;
+            justify-items: center;
+        }
+         .heading{
+            /* background-color: blue; */
+            padding: 10px 0px;
+        } 
+        .heading a{
+            /* border: 1px solid red; */
+            width: 1024px;
+            margin: -2px auto;
+            display: block;
+            /* background-color: rgb(22 52 52); */
+            background-color: rgb(217 237 240);
+            color: #0f6674;
+            height: 45px;
+            font-size: 31px;
+            padding: 0px 20px 0px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .heading a:hover{
+            color: rgb(11, 52, 90);
+
+        }
+       
+        .navbar1 ul{
+            background-color: #004159;
+            border-radius: 20px;
+            border: 1px solid white;
+            display: flex;
+            list-style: none;
+            padding: 2px 5px;
+            width: 1024px;
+            margin: 5px auto;
+            box-shadow: 3px 2px 8px #545b62;
+            
+            
+        }
+        .navbar1 li a{
+            margin: 0px 25px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            
+        }
+        .navbar1 li a:hover{
+            color: wheat;
+    
+        }
+        .navbar1 li a:active{
+            color: yellow;
+            
+        }
+        .navbar2{
+            border: 1px solid white;
+            border-radius: 30px;
+            width: 1024px;
+            margin: 15px auto;
+            background: linear-gradient(185deg, #3b61ca, #2eeca5);
+            box-shadow: 3px 3px 11px #dae0e5;
+        }
+
+        .navbar2 ul{
+            list-style: none;
+            display: flex;
+            padding: 4px 0px;
+            margin: 10px 0px;
+        }
+
+        .navbar2 li{
+            padding: 0px 30px;
+        }
+        .navbar2 li a{
+            color: white;
+            font-size: large;
+        
+        }
+        .navbar2 li a:active{
+            color: black;
+            text-decoration: underline;
+            
+        }
+        .navbar2 li a:hover{
+            color: wheat;
+        
+        }
+        .heading2{
+            display: flex;
+            /* border: 1px solid yellow; */
+            height: 1024px;
+            width: 1024px;
+            margin: 20px auto;
+            background-color: rgb(227 251 257);
+            border-radius: 10px;
+        }
+        .page h1{
+            padding: 0px 30px;
+            font-size: -webkit-xxx-large;
+            margin: 5px 0px;
+        }   
+       
+        footer{
+            /* background-color: black; */
+            color: black;
+            padding: 10px 20px;
+            width: 988px;
+            margin: 4px auto;
+            display: block;
+            text-align: center;
+        }
+        .para{  
+            justify-content: center;
+            padding: 30px 30px 10px 30px;
+            width: 100%;
+            overflow: auto;
+            margin: 0 auto;
+            /* border:2px solid red; */
+            height: 900px;
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="logo.png" alt="">
+        </div>
+        <div class="heading" id="firstheading">
+            <a href="index2.html">WELCOME TO THE ECE LAB</a>
+        </div>
+        <div>
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="link.html">Link</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <header class="heading2">
+            <div class="page">
+                
+                <h1>Theory</h1>
+                <div class="para">
+                    <section style="display: block;">
+                    <p  style="text-align:justify">
+                       <h5>
+<p>In this experiment user will generate the basic signals such as unit impulse function, unit step function, exponential function, ramp function and sinusoidal function using the pre-written MATLAB code.</p><br>
+<p>1) The unit impulse function is mathematically defined as </p><p><img src="unit impulse.png" style="width:300px;height:80px;"></p>
+<p>where unity at <i>t=&#964;<sub>0</sub></i> represents the area of impulse function. Since, the width of the impulse function <i>&#916;t&#8594;0</i> , therefore, theoretically impulse function point towards infinity at <i>t=&#964;<sub>0</sub>;</i> and hence the area becomes unity. However, for signal generation through codes width of impulse <i>&#916;</i>cannot be made 0 due to finite step size of time parameter, therefore, generally a triangular pulse of very small width instead of impulse function is plotted.</p>
+<p>2) Similarly, unit step function is defined mathematically as </p> <img src = "unit step.png"  style="width:300px;height:80px;"><br>
+<p>Therefore, it will take a constant value equals to 1 for t&#62;0 , otherwise 0.</p><br>
+<p>3) The definition of ramp function is </p>
+ <p>                   </p>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<b> <i>r(t) &#61; t.u(t)</i></b>
+ <br><br>
+
+
+<p>where, u(t) is defined in the above unit step equation. Therefore, a signal will be generated as a line of unit slope for t>0 and it is 0 for t<0. </p><br>
+<p>4) For exponential signal (e<sup>at</sup> for all &lsquo;<em>t</em>&rsquo;) based on the exponent &lsquo;a&rsquo; either a increasing exponential or a decreasing exponential signal will be plotted.</p>
+<p>5) Sinusoidal signal is having its mathematical form as s(t)=A sin (2pft+fi)</p><br>
+<p>So, based on the amplitude and frequency parameters a sinusoid of various amplitude and frequency will be generated. The plot will be obtained for f=0  .</p>
+
+
+</h5>
+                    </p>
+                    </section>
+                    </div>
+                
+            </div>
+        </header>
+        
+        
+    </header>
+    <footer>
+        <div class="foot">
+            Copyright &copy;www.bietjh.ac.in
+            <br> Bundelkhand Institute Of Engineering and Technology, Jhansi
+        </div>
+    </footer>
+</body>
+</html>

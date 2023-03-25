@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Lab</title>
+    <style>
+        body{
+            /* background-color: teal; */
+            background: linear-gradient(130deg, pink, #ffd400);
+            background-repeat: no-repeat;
+        
+        }
+        header img{
+            /* border: 2px solid red; */
+            margin: -8px auto;
+            /* width: 960px; */
+            width: 1024px;
+            display: block;
+            justify-items: center;
+        }
+         .heading{
+            /* background-color: blue; */
+            padding: 10px 0px;
+        } 
+        .heading a{
+            /* border: 1px solid red; */
+            width: 1024px;
+            margin: -2px auto;
+            display: block;
+            /* background-color: rgb(22 52 52); */
+            background-color: rgb(217 237 240);
+            color: #0f6674;
+            height: 45px;
+            font-size: 31px;
+            padding: 0px 20px 0px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .heading a:hover{
+            color: rgb(11, 52, 90);
+
+        }
+       
+        .navbar1 ul{
+            background-color: #004159;
+            border-radius: 20px;
+            border: 1px solid white;
+            display: flex;
+            list-style: none;
+            padding: 2px 5px;
+            width: 1024px;
+            margin: 5px auto;
+            box-shadow: 3px 2px 8px #545b62;
+            
+            
+        }
+        .navbar1 li a{
+            margin: 0px 25px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            
+        }
+        .navbar1 li a:hover{
+            color: wheat;
+    
+        }
+        .navbar1 li a:active{
+            color: yellow;
+            
+        }
+       
+        .heading2{
+            display: flex;
+            /* border: 1px solid yellow; */
+            height: 1024px;
+            width: 1024px;
+            margin: 20px auto;
+            background-color: rgb(227 251 257);
+            border-radius: 10px;
+        }
+        .page h1{
+            padding: 0px 30px;
+            font-size: -webkit-xxx-large;
+            margin: 15px 0px;
+        }   
+       
+        footer{
+            /* background-color: black; */
+            color: black;
+            padding: 10px 20px;
+            width: 988px;
+            margin: 4px auto;
+            display: block;
+            text-align: center;
+        }
+        .para{  
+            justify-content: center;
+            padding: 30px 30px 10px 30px;
+            width:100%;
+            overflow: auto;
+            margin: 0 auto;
+            /* border:2px solid red; */
+            /* height:900px; */
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="heading" id="firstheading">
+            <a href="index2.html">ELECTRONICS & COMMUNICATION ENGINEERING LAB</a>
+        </div>
+        <div>
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="link.html">Link</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <header class="heading2">
+            <div class="page">
+                
+                <h5>Home > DSP > Procedure</h5>
+                <div class="para">
+                    <section style="display: block;">
+                    <p  style="text-align:justify">
+                       <h5>In this experiment we will write a MATLAB code to generate the various basic signal such as unit impulse, unit step, ramp, exponential, sinusoidal and cosine signals. The user will select the signal from drop down menu and according to selected signal they can enter various parameters. In case of unit impulse and unit step signals, user can enter the delay parameter to observe the time shifting property of signals. Similarly, in case of ramp signal user can give the slope of the ramp as input parameter. For exponential signal user can enter the rate of exponential decay/increase and observe the waveforms. In case of sinusoidal signals various attributes such as amplitude, frequency and phase can be entered and effect can be observed on plotted waveforms.</h4>
+<br><br><br>
+<img src="flowchart.png" style="width:600px;height:600px;">
+                    
+                    </p>
+                    </section>
+                    </div>
+                
+            </div>
+        </header>
+        
+        
+    </header>
+    <footer>
+        <div class="foot">
+            Copyright &copy;www.bietjh.ac.in
+            <br> Bundelkhand Institute Of Engineering and Technology, Jhansi
+        </div>
+    </footer>
+</body>
+</html>

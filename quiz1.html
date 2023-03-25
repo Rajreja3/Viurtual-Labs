@@ -1,0 +1,123 @@
+
+
+
+<html>
+<head>
+
+    <title>Quiz Questions And Answers</title>
+</head>
+
+<body style="background-color:powderblue;">
+
+    <center><h1><b>Quiz Questions</b><hr><hr></h1></center>
+    <p>
+    <form name="quiz">
+    <p>
+<h3>
+        Question 1.
+        <br>Which command should be used to remove all the previous variables stored in the workspace?<br></b>
+        <blockquote>
+    <input type="radio" name="q1" value="clc">clc<br>
+    <input type="radio" name="q1" value="clear">clear<br>
+    <input type="radio" name="q1" value="clear all">clear all<br>
+    <input type="radio" name="q1" value="Both B and C">Both B and C<br>
+    </blockquote>
+
+<p>
+<hr>
+Question 2.
+<br>An unit step function u(t) will have its magnitude<br></b>
+<blockquote>
+<input type="radio" name="q2" value="Equal to 1 for all ‘t’">Equal to 1 for all ‘t’<br>
+<input type="radio" name="q2" value="dEqual to 1 for ‘t>1’">Equal to 1 for ‘t>1’<br>
+<input type="radio" name="q2" value="Equal to 1 for ‘t>0’">Equal to 1 for ‘t>0’<br>
+<input type="radio" name="q1" value="Equal to 1 for ‘t<0’">Equal to 1 for ‘t<0’<br>
+</blockquote>
+<p>
+<hr>
+Question 3.
+<br>What will be the effect of giving delay of 20 msec, on unit impulse function?<br></b>
+<blockquote>
+<input type="radio" name="q3" value="No effect">No effect<br>
+<input type="radio" name="q3" value="Impulse will appear after 20 msec at t = 0.">Impulse will appear after 20 msec at t = 0.<br>
+<input type="radio" name="q3" value="Impulse will be left shifted on time-scale and appeared at t = -20 msec.">Impulse will be left shifted on time-scale and appeared at t = -20 msec.<br>
+<input type="radio" name="q1" value="Impulse will be right shifted and appeared at t= 20 msec.">Impulse will be right shifted and appeared at t= 20 msec.<br>
+</blockquote>
+<p>
+<hr>
+Question 4.
+<br>If a sinusoidal wave completse 5 cycles in 100 msec, then the frequency of wave is?<br>
+<blockquote>
+<input type="radio" name="q4" value="100 Hz">100 Hz<br>
+<input type="radio" name="q4" value="50 Hz">50 Hz<br>
+<input type="radio" name="q4" value="0.05 Hz">0.05 Hz<br>
+<input type="radio" name="q4" value="500 Hz">500 Hz<br>
+</blockquote>
+<p>
+<hr>
+Question 5.
+<br>What changes will be observed in workspace if a code S=x; is executed for the first time?<br>
+<blockquote>
+<input type="radio" name="q5" value="A variable with name S will be created and value of x will be assigned to it and both S and x will have the same data; provided x is being defined previously.">A variable with name S will be created and value of x will be assigned to it and both S and x will have the same data; provided x is being defined previously.<br>
+<input type="radio" name="q5" value="Value of x will be transferred to S and x will be emptied.">Value of x will be transferred to S and x will be emptied.<br>
+<input type="radio" name="q5" value="It will show x is undefined if it is not defined previously and no changes in the workspace observed.">It will show x is undefined if it is not defined previously and no changes in the workspace observed.<br>
+<input type="radio" name="q5" value="Both A and C">Both A and C<br>
+</blockquote>
+<p>
+<hr>
+
+
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+<input type="reset" value="Clear"><p>
+Number of score out of 5 = <input type= text size 5 name= "mark">
+Score in percentage = <input type=text size=5 name="percentage"><br>
+
+</form>
+<p>
+
+    <form method="post" name="Form" onsubmit="" action="">
+</form>
+
+</body>
+
+
+<script>
+    var numQues = 5;
+var numChoi = 4;
+var answers = new Array(5);
+    answers[0] = "Both B and C";
+    answers[1] = "Equal to 1 for ‘t>0’";
+    answers[2] = "Impulse will be right shifted and appeared at t= 20 msec.";
+    answers[3] = "50 Hz";
+    answers[4] = "Both A and C";
+    
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+
+
+}
+    </script>
+</html>

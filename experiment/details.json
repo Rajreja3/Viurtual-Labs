@@ -1,0 +1,46 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Write a Program for the generation of basic signals such as Unit Impulse, Unit Step, Ramp, Exponential, Sinusoidal and Cosine.",     
+			"Lab": "Digital Signal Processing Lab",               
+			"Discipline": "Electronics & Communication",				 
+			"Technology": "HTML, CSS, Javascript"         
+       }
+   ],
+
+   "developer": [
+       {       
+      "Developer": "Dr. Satish Kumar Singh",         
+      "Institute": "Bundelkhand Institute of Engineering & Technology",         
+      "InstituteAcronym": "BIET, Jhansi"   
+       }
+   ],
+
+   "contributer": [
+       {       
+			"Contributer": "Samarth Agarwal",             
+      "Institute": "Bundelkhand Institute of Engineering & Technology",               
+			"InstituteAcronym": "BIET, Jhansi"         
+       },
+
+       {       
+			"Contributer": "Shubham Singh",              
+      "Institute": "Bundelkhand Institute of Engineering & Technology",               
+			"InstituteAcronym": "BIET, Jhansi"         
+       },
+
+       {       
+			"Contributer": "Nitish Kumar",             
+      "Institute": "Bundelkhand Institute of Engineering & Technology",               
+			"InstituteAcronym": "BIET, Jhansi"         
+       },
+
+       {       
+			"Contributer": "Mukesh Bharti",              
+      "Institute": "Bundelkhand Institute of Engineering & Technology",               
+			"InstituteAcronym": "BIET, Jhansi"         
+       }
+   ]
+
+}
